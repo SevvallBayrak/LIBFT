@@ -1,13 +1,43 @@
-Kendi C standart kütüphanemi (libft.a) sıfırdan oluşturdum.
-Amaç: strlen, memcpy, atoi, calloc, split, itoa gibi temel fonksiyonları sıfırdan yazmak ve bellek yönetimi, string işlemleri öğrenmek.
-Neler Öğrendim ?
--C Standart Kütüphanesi (libc) fonksiyonlarının nasıl çalıştığını içten içe öğrendim.
--C dilinde temel string, bellek ve karakter işlemlerini sıfırdan kodladım.
--Kendi libft.a kütüphanemi oluşturdum (C programlarında tekrar tekrar kullanabileceğim).
--Libc fonksiyonlarını kendi versiyonumla yeniden yazdım (örneğin ft_strlen, ft_memcpy, ft_atoi vs).
--Ek fonksiyonlar yazdım: ft_split, ft_strjoin, ft_substr, ft_itoa gibi gelişmiş string fonksiyonları.
--Pointer ve pointer aritmetiği kullanarak string ve bellek manipülasyonu geliştirdim.
--Heap memory yönetimini doğru ve hatasız kullanmayı öğrendim.
--Makefile ile otomatik derleme süreçlerine alıştım.
--Kod standardizasyonu (Norm kuralları) ve temiz kod yazımı pratiği yaptım.
--Static functions kullanarak modüler kod yazma ve encapsulation öğrendim.
+# 📚 libft - Kendi C Standart Kütüphanem
+
+Bu proje, C dilindeki temel standart kütüphane fonksiyonlarını **sıfırdan yazmayı** ve **hafıza yönetimi** ile **string işlemleri** konularında derinlemesine bilgi sahibi olmayı amaçlar. `libft.a` adlı statik bir kütüphane oluşturulmuştur ve bu kütüphane farklı C projelerinde **yeniden kullanılabilir** yapıdadır.
+
+---
+
+## 🚀 Proje Hakkında
+
+Bu kütüphane, C standart kütüphanesindeki (libc) birçok temel fonksiyonun kendi implementasyonları ile oluşturulmuştur.
+
+Fonksiyonlar:
+- `ft_strlen`, `ft_memcpy`, `ft_memset`, `ft_bzero`, `ft_atoi`, `ft_calloc`, `ft_strdup`
+- `ft_strncmp`, `ft_strchr`, `ft_strrchr`, `ft_strlcpy`, `ft_strlcat`
+- `ft_split`, `ft_strjoin`, `ft_substr`, `ft_itoa`, `ft_strtrim`
+- ve diğer temel yardımcı fonksiyonlar
+
+Ek olarak:
+- `Makefile` ile otomatik derleme
+- Modüler yapı ve `static` fonksiyon kullanımı
+- Memory leak testleri yapılmıştır
+
+---
+
+## 🧠 Neler Öğrendim?
+
+- C dilinde **string**, **bellek** ve **karakter işlemleri**
+- `malloc`, `free` gibi fonksiyonlarla **heap yönetimi**
+- **Pointer aritmetiği** ve bellek adresleme
+- `Makefile` ile **otomatik derleme süreçleri**
+- Kod stiline uygun **temiz ve modüler** yazım
+- `libft.a` adında **statik kütüphane** üretimi
+- `static` fonksiyonlarla **encapsulation**
+- **Norminette** gibi kod standartlarına uygunluk (42 okulu)
+
+---
+
+## 🛠️ Nasıl Derlenir?
+
+```bash
+make        # libft.a dosyasını oluşturur
+make clean  # obje dosyalarını siler
+make fclean # obje + libft.a dosyasını siler
+make re     # temiz derleme
