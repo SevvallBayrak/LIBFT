@@ -1,10 +1,10 @@
-# 📚 libft - Kendi C Standart Kütüphanem
+# libft - Kendi C Standart Kütüphanem
 
 Bu proje, C dilindeki temel standart kütüphane fonksiyonlarını **sıfırdan yazmayı** ve **hafıza yönetimi** ile **string işlemleri** konularında derinlemesine bilgi sahibi olmayı amaçlar. `libft.a` adlı statik bir kütüphane oluşturulmuştur ve bu kütüphane farklı C projelerinde **yeniden kullanılabilir** yapıdadır.
 
 ---
 
-## 🚀 Proje Hakkında
+## Proje Hakkında
 
 Bu kütüphane, C standart kütüphanesindeki (libc) birçok temel fonksiyonun kendi implementasyonları ile oluşturulmuştur.
 
@@ -21,7 +21,7 @@ Ek olarak:
 
 ---
 
-## 🧠 Neler Öğrendim?
+## Neler Öğrendim?
 
 - C dilinde **string**, **bellek** ve **karakter işlemleri**
 - `malloc`, `free` gibi fonksiyonlarla **heap yönetimi**
